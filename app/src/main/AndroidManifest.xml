@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.i8ham.drewshoot">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainGallery">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PhotoDetail">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.APP_GALLERY" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Search" />
+        <activity android:name=".Settings" />
+        <activity
+            android:name=".MapSearchSettings"
+            android:label="@string/title_activity_map_search_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DBAccess.TagSearchSetting"
+            android:label="@string/title_activity_tag_search_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CameraScreen" />
+        <activity android:name=".TimeSearchMenu" />
+        <activity android:name=".TagSearchMenu" />
+        <activity android:name=".MapSearchMenu"></activity>
+    </application>
+
+</manifest>
